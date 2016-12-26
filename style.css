@@ -391,14 +391,19 @@ hr {
             justify-content: center;
         }
     }
+    .person, .wrapper-clients {
+        padding: 0 10px;
+    }
     .person {
         flex: 1 1 45%;
     }
+    @media (max-width: 931px) {
+        .person {
+            padding-bottom: 20px;
+        }
+    }
     .wrapper-clients {
         flex: 1 1 55%;
-    }
-    .person, .wrapper-clients {
-        padding: 0 10px 20px;
     }
         .person h6, .wrapper-clients h6 {
             position: relative;
@@ -458,52 +463,61 @@ hr {
         }
 
 
-
+/*----------------------download--------------------------*/
     .download {
-        max-width: 1000px;
-        height: 140px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
         background-color: #e8fcfe;
         border: 1px solid #81e4ed;
-        margin: 0 auto;
+    }
+    @media (max-width: 931px) {
+        .download {
+            flex-wrap: wrap;
+        }
     }
         .download p {
             width: 607px;
-            height: 68px;
-            color: #363636;
             font-size: 16px;
             font-weight: 400;
             line-height: 26px;
-            display: inline-block;
-            padding: 30px;
-
+            color: #363636;
+        }
+        @media (max-width: 931px) {
+            .download p {
+                width: 100%;
+                text-align: center;
+            }
         }
 
-        .download b {
+        .download a {
             display: inline-block;
-            color: #0d0707;
-            font-weight: 700;
-            line-height: 60px;
-            text-transform: uppercase;
-            text-align: center;
-            padding: 0px;
             width: 240px;
             height: 60px;
-            vertical-align: middle;
+            padding: 0px;
             background-color: #2aacc8;
             background-image: linear-gradient(to top, #2aacc8 0%, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
             border: 1px solid #2aacc8;
             border-radius: 8px;
             box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+            font-weight: 700;
+            line-height: 60px;
+            vertical-align: middle;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            color: #0d0707;
         }
 
-        .download b:before {
-                content: "";
-                display: inline-block;
-                width: 50px;
-                height: 25px;
-                background-image: url(img/download.png);
-                background-repeat: no-repeat;
-                clear: both;
+        .download a:before {
+            content: "";
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            background-image: url(img/download.png);
+            background-repeat: no-repeat;
+            vertical-align: middle;
         }
 
         .download a {
