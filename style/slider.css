@@ -1,17 +1,17 @@
-    .slider {
-        background-color: #81e4ed;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        height: 100%;
+.slider {
+    background-color: #81e4ed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+    .wrapper-slider {
+        position: relative;
+        height: 0;
+        padding-top: 440px;
+        background-image: url(../img/slider1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-        .wrapper-slider {
-            position: relative;
-            height: 0;
-            padding-top: 440px;
-            background-image: url(../img/slider1.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
         .wrapper-slider p {
             position: absolute;
             top: 10%;
@@ -45,16 +45,14 @@
                 text-align: center;
             }
         }
-        .slider ul {
-            padding-left: 0;
-            text-align: center;
+    .slider ul {
+        padding-left: 0;
+        text-align: center;
+    }
+        .slider ul li {
+            display: inline-block;
+            margin: 20px 10px 0;
         }
-
-            .slider ul li {
-                display: inline-block;
-                margin: 20px 10px 0;
-            }
-
             .slider ul li a {
                 display: inline-block;
                 height: 15px;
@@ -62,7 +60,6 @@
                 background-color: gray;
                 border-radius: 50%;
             }
-
                 .slider ul li a:hover {
                     background-color: white;
                 }
