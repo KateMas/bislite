@@ -11,3 +11,8 @@ body {
     h6 {
         margin: 0;
     }
+    .bgc {
+        padding-bottom: 50px;
+        background-color: #ffffff;
+        border-top: 1px solid #ccc7c7;
+    }
