@@ -57,22 +57,14 @@
                 color: #363636;
                 overflow: hidden;
             }
-
-        .opportunity a {
-            text-decoration: none;
-            color: #2aacc8;
-        }
-
-        .opportunity a:before {
-            content: "\25b8";
-            display: inline;
-            color: black;
-            clear: both;
-            padding-right: 10px;
-        }
-
-.bgc {
-    padding-bottom: 50px;
-    background-color: #ffffff;
-    border-top: 1px solid #ccc7c7;
-}
+            .opportunity a {
+                text-decoration: none;
+                color: #2aacc8;
+            }
+                .opportunity a:before {
+                    content: "\25b8";
+                    display: inline;
+                    color: black;
+                    clear: both;
+                    padding-right: 10px;
+                }
