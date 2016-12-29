@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background-color: #e8ebf1;
+    font-family: 'Lato', sans-serif;
+}
+    .bwrappers {
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+    h6 {
+        margin: 0;
+    }

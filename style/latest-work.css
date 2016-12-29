@@ -1,0 +1,101 @@
+    .latest-work {
+        padding: 20px 0 0;
+    }
+        .latest-work h6 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 40px;
+            text-transform: uppercase;
+        }
+
+            .latest-work h6:before {
+                content: "";
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-image: url(../img/pointer.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                vertical-align: top;
+            }
+            .latest {
+                display: flex;
+                justify-content: space-between;
+            }
+            .latest li {
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                background-color: #81e4ed;
+                background-image: url(../img/arrow.png);
+                background-repeat: no-repeat;
+                background-position: 45%;
+                border-radius: 50%;
+                font-weight: 700;
+                margin: 5px;
+                text-align: center;
+            }
+            .latest li:first-child {
+            }
+            .latest li:last-child {
+                transform: rotate(180deg);
+            }
+
+        .wrapper-latest {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px 0;
+            border-top: 1px solid #ccc7c7;
+            border-bottom: 1px solid #ccc7c7;
+        }
+        @media (max-width: 931px) {
+            .wrapper-latest {
+                justify-content: space-around;
+            }
+        }
+            .gallery {
+                position: relative;
+            }
+                .gallery img {
+                    width: 100%;
+                }
+
+            .link {
+                display: none;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 50%;
+                background-color: #2aacc8;
+            }
+            .link-position {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            .gallery:hover .link {
+                display: block;
+                height: 50%;
+            }
+            .link a:before {
+                content: "";
+                display: inline-block;
+                width: 54px;
+                height: 26px;
+                background-repeat: no-repeat;
+                background-position: bottom;
+            }
+
+            .link a:first-child:before {
+                background-image: url(../img/eye.png);
+            }
+
+            .link a:last-child:before {
+                background-image: url(../img/chain.png);
+            }
