@@ -1,8 +1,8 @@
-    .clients {
-        display: flex;
-        justify-content: space-between;
-        padding: 50px 0;
-    }
+.clients {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
     @media (max-width: 931px) {
         .clients {
             flex-wrap: wrap;
@@ -50,32 +50,28 @@
                 background-image: url(../img/comments.png);
                 background-repeat: no-repeat;
                 content: "";
-        }
+            }
             .wrapper-clients h6:before {
                 background-image: url(../img/clients.png);
             }
+            .person p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #363636;
+            }
+                .person p:last-child {
+                    font-weight: 700;
+                    font-style: italic;
+                }
             .wrapper-clients div {
                 display: flex;
                 justify-content: flex-end;
                 flex-wrap: wrap;
+                padding-top: 20px;
             }
             @media (max-width: 931px) {
                 .wrapper-clients div {
                     justify-content: center;
                 }
             }
-
-        .person p, .wrapper-clients p {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            color: #363636;
-        }
-            .person p:last-child {
-                font-weight: 700;
-                font-style: italic;
-            }
-
-        .person div.wrapper-clients div {
-            padding-top: 20px;
-        }
