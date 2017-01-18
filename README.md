@@ -2,7 +2,7 @@
 
 Working with git, pull request.
 
-And workong with code.
+And working with code.
 Updated styles for bislite:
 
 -changed and added classes, added font Lato in html;
